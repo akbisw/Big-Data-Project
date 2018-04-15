@@ -1,0 +1,2 @@
+hdfs dfs -put weather* data/ 
+hdfs dfs -put citibike* data/

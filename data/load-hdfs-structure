@@ -1,3 +1,4 @@
+# Creating HDFS Directory
 hdfs dfs -mkdir pre-processing
 hdfs dfs -mkdir aggregates
 hdfs dfs -mkdir index
