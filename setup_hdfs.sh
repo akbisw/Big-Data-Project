@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Download Datasets
 cd data
 if [ ! -f weather ]; then

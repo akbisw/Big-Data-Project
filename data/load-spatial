@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 hdfs dfs -put neighborhood.txt neighborhood
 hdfs dfs -put neighborhood-graph.txt neighborhood-graph
 hdfs dfs -put zipcode.txt zipcode

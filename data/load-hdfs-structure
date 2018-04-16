@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Creating HDFS Directory
 hdfs dfs -mkdir pre-processing
 hdfs dfs -mkdir aggregates
@@ -7,3 +8,5 @@ hdfs dfs -mkdir relationships
 hdfs dfs -mkdir relationships-ids
 hdfs dfs -mkdir correlations
 hdfs dfs -mkdir data
+# Load 'datasets' file
+hdfs dfs -put datasets.txt data/datasets
