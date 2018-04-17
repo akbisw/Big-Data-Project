@@ -9,5 +9,7 @@ if [ ! -f citibike ]; then
 fi
 # Prepare HDFS
 sh load-hdfs-structure
+# Load Spacial Data
 sh load-spatial
+# Load datasets (weather and citibike)
 sh load-datasets

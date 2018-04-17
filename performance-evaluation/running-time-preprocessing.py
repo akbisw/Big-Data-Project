@@ -13,7 +13,7 @@ import matplotlib.font_manager as font
 import locale
 locale.setlocale(locale.LC_ALL, 'en_US')
 
-datasets = ["311","crash","taxispeed","citibike","weather","gas-prices"]
+datasets = ["citibike","weather"]
 
 temp = {"hour": 4,
         "day": 3,
