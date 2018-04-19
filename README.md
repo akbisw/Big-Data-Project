@@ -11,3 +11,5 @@
 4. Run the experiment: `run_experiment.sh`
 
 Charts and pretty print results have not been scripted yet.
+
+But the correlations from our test run can be found here: https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/correlations and the relationship result can be found here: https://github.com/akbisw/Citi-Bike-Big-Data/blob/master/performance-evaluation/output-events/weather-citibike-hour-city-events-restricted
