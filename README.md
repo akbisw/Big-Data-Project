@@ -4,7 +4,10 @@
 3. Groups have the freedom to choose the temporal resolutions they will work on -- the more the merrier -- and they should also play with correlations for specific neighborhoods / zip codes when trying to explain a relationship. Any decision taken during the project (data cleaned, chosen resolution, architecture, etc.) must be written down on the final report.
 4. Use Spearman's rank as a correlation measure.
 
-# Run Project
+# Run Project for Final Paper
+1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+
+# Run Project for Preliminary Report
 1. Clone the repo: `git clone https://github.com/akbisw/Citi-Bike-Big-Data.git`
 2. Change dir into the repo: `cd Citi-Bike-Big-Data`
 3. Run the setup script to download datasets and setup hdfs: `sh setup.sh`
