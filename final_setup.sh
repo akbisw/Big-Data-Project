@@ -18,3 +18,9 @@ hdfs dfs -put citibike2013to2017
 # ... more things 
 # output directory is set to data/citibike2013to2017
 spark-submit clean-citibike.py citibike2013to2017
+
+# getmerge the output
+hdfs dfs -getmerge data/citibike2013to2017 citibike2013to2017.csv
+
+# Upload it back to hdfs
+hdfs dfs -put citibike2013to2017.csv
