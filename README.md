@@ -4,6 +4,16 @@
 3. Groups have the freedom to choose the temporal resolutions they will work on -- the more the merrier -- and they should also play with correlations for specific neighborhoods / zip codes when trying to explain a relationship. Any decision taken during the project (data cleaned, chosen resolution, architecture, etc.) must be written down on the final report.
 4. Use Spearman's rank as a correlation measure.
 
+# Datasets
+1. Citi Bike Trip Histories
+
+Example: 
+
+`1 - 634,2 - 1372654800,3 - 1372655434,4 - 164,5 - $E 47 St & 2 Ave$,6 - 40.75323098,7 - -73.97032517,8 - 504,
+9 - $1 Ave & E 15 St$,10 - 40.73221853,11 - -73.98165557,12 - 16950,13 - $Customer$,14 - $\N$,15 - $0$`
+
+$value$ are ignored in data polygamy framework
+
 # Run Project for Final Paper
 1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
 
