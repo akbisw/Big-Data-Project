@@ -43,4 +43,5 @@ def mapper(x):
     # return the list as a csv string
     return ",".join(str(y) for y in x) 
 
-citibikeRdd = citibikeRdd.map(mapper).saveAsTextFile("data/citibike2013to2017")
+citibikeRdd = citibikeRdd.map(mapper).saveAsTextFile("data/citibike2013to2017.final")
+sc.stop()

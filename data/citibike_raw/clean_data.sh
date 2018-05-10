@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-
-# CD to data directory and download citibike datasets 2013 to 2017
-cd data/citibike_raw
-sh download_data.sh
-
-# Extract everything and merge all the citi bike datasets into one file
-sh extract_data.sh
-# Merge to filename citibike2013to2017
-sh merge_data.sh
+# Set environment for pyspark
+module load python/gnu/3.4.4 spark/2.2.0 git/1.8.3.1
+export PYTHONHASHSEED=0
+export SPARK_YARN_USER_ENV=PYTHONHASHSEED=0
+export PYSPARK_PYTHON='/share/apps/python/3.4.4/bin/python'
+export PYSPARK_DRIVER_PYTHON='/share/apps/python/3.4.4/bin/python'
 
 # Upload the merged dataset to hdfs
 hdfs dfs -mkdir data
@@ -21,10 +18,10 @@ rm citibike2013to2017
 spark-submit clean-citibike.py data/citibike2013to2017
 
 # getmerge the output
-hdfs dfs -getmerge data/citibike2013to2017 citibike2013to2017.csv
+hdfs dfs -getmerge data/citibike2013to2017.final citibike2013to2017.csv
 
 # Upload it back to hdfs
-hdfs dfs -put data/citibike2013to2017.csv
+hdfs dfs -put data/citibike2013to2017.csv data/
 
 # Rm citibike2013to2017.csv locally
 rm citibike2013to2017.csv

@@ -21,3 +21,6 @@ do
         cat $year$month-citibike-tripdata.csv  >> citibike2013to2017
     done;     
 done
+
+# Remove all the monthly csv files
+rm *.csv
