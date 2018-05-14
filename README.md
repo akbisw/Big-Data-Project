@@ -15,14 +15,13 @@ Example:
 $value$ are ignored in data polygamy framework. "# - " appended to beginning of column values to indicate the column numbers only for demonstration purposes, not included in dataset.
 
 # Run Project for Final Paper
-Fast track by downloading preprocessed citibike dataset
-1. Download https://drive.google.com/uc?export=download&confirm=gVzO&id=1nnTH5G9tIwbRvn35HXrm_pqz1HqRL1i5 into https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/data/citibike_raw directory.
-2. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+### With Data Polygamy Framework 
+1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+2. Run final experiment: `sh final_exp.sh`
 
 # Results
-Citibike (all) & Weather
-https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/correlation/correlations/weather-citibike2013to2017clean
-https://github.com/akbisw/Citi-Bike-Big-Data/blob/master/relationship/weather-citibike2013to2017clean-hour-city-events-restricted
+Citibike (nyc) & Weather
+https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/correlation/correlations/nyc
 
 
 # Run Project for Preliminary Report
