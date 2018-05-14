@@ -25,3 +25,12 @@ hdfs dfs -getmerge data/citibike2013to2017 citibike2013to2017clean
 
 # Upload it back to hdfs
 hdfs dfs -put citibike2013to2017clean data
+
+# Setup the rest
+cd ../
+# Prepare HDFS
+sh load-hdfs-structure
+# Load Spacial Data
+sh load-spatial
+# Load datasets (weather and citibike)
+sh load-datasets
