@@ -21,10 +21,7 @@ rm citibike2013to2017
 spark-submit clean-citibike.py data/citibike2013to2017
 
 # getmerge the output
-hdfs dfs -getmerge data/citibike2013to2017 citibike2013to2017.csv
+hdfs dfs -getmerge data/citibike2013to2017 citibike2013to2017clean
 
 # Upload it back to hdfs
-hdfs dfs -put data/citibike2013to2017.csv
-
-# Rm citibike2013to2017.csv locally
-rm citibike2013to2017.csv
+hdfs dfs -put citibike2013to2017clean data
