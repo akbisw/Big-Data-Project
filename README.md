@@ -1,4 +1,4 @@
--# Goals
+# Goals
 1. Build the infrastructure to find temporal correlations between datasets (using Spark or Hadoop). Event detection: find correlations without and with event detection (any technique), to see if they can find correlations with rare events.
 2. Choose some correlations that are potentially interesting and try to explain / come up with hypotheses, etc. For instance, how is the correlation for specific neighborhoods / zip codes?
 3. Groups have the freedom to choose the temporal resolutions they will work on -- the more the merrier -- and they should also play with correlations for specific neighborhoods / zip codes when trying to explain a relationship. Any decision taken during the project (data cleaned, chosen resolution, architecture, etc.) must be written down on the final report.
@@ -15,7 +15,15 @@ Example:
 $value$ are ignored in data polygamy framework. "# - " appended to beginning of column values to indicate the column numbers only for demonstration purposes, not included in dataset.
 
 # Run Project for Final Paper
-1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+Fast track by downloading preprocessed citibike dataset
+1. Download https://drive.google.com/uc?export=download&confirm=gVzO&id=1nnTH5G9tIwbRvn35HXrm_pqz1HqRL1i5 into https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/data/citibike_raw directory.
+2. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+
+# Results
+Citibike (all) & Weather
+https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/correlation/correlations/weather-citibike2013to2017clean
+https://github.com/akbisw/Citi-Bike-Big-Data/blob/master/relationship/weather-citibike2013to2017clean-hour-city-events-restricted
+
 
 # Run Project for Preliminary Report
 1. Clone the repo: `git clone https://github.com/akbisw/Citi-Bike-Big-Data.git`
