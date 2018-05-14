@@ -21,7 +21,8 @@ spark-submit clean-citibike.py data/citibike2013to2017
 hdfs dfs -getmerge data/citibike2013to2017.final citibike2013to2017.csv
 
 # Upload it back to hdfs
-hdfs dfs -put data/citibike2013to2017.csv data/
+hdfs dfs -put data/citibike2013to2017.csv data/citibike2013to2017
 
-# Rm citibike2013to2017.csv locally
+# Rm citibike2013to2017.csv locally and the hadoop results
 rm citibike2013to2017.csv
+hdfs dfs -rm -r data/citibike2013to2017.final
