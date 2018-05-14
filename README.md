@@ -15,7 +15,9 @@ Example:
 $value$ are ignored in data polygamy framework. "# - " appended to beginning of column values to indicate the column numbers only for demonstration purposes, not included in dataset.
 
 # Run Project for Final Paper
-1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
+Fast track by downloading preprocessed citibike dataset
+1. Download https://drive.google.com/uc?export=download&confirm=gVzO&id=1nnTH5G9tIwbRvn35HXrm_pqz1HqRL1i5 into https://github.com/akbisw/Citi-Bike-Big-Data/tree/master/data/citibike_raw directory.
+2. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
 
 # Results
 Citibike (all) & Weather
