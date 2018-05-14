@@ -18,6 +18,12 @@ $value$ are ignored in data polygamy framework. "# - " appended to beginning of 
 ### With Data Polygamy Framework 
 1. Run the setup script to download/clean and upload datasets hdfs: `sh final_setup.sh`
 2. Run final experiment: `sh final_exp.sh`
+3. Get correlation measures:
+```
+cd correlation
+sh get-correlations.sh
+```
+Correlations will be merged and downloaded to nyc directory.
 
 # Results
 Citibike (nyc) & Weather
